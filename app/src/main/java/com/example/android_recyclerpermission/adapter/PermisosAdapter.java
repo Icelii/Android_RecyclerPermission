@@ -53,6 +53,7 @@ public class PermisosAdapter extends RecyclerView.Adapter<PermisosAdapter.ViewHo
 
         public void setData(Permiso permiso) {
             this.PermisoH = permiso;
+            txtPermiso.setText(permiso.getDescripcion());
         }
     }
 }

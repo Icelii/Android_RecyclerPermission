@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="120dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/azul"
+    android:background="@color/md_theme_light_secondary"
     android:layout_margin="15dp"
     android:padding="15dp">
 
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Permiso"
-        android:textColor="@color/white"
+        android:textColor="@color/md_theme_light_onPrimary"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,5 +29,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

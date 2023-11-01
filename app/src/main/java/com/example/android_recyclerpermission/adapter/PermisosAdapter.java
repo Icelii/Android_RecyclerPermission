@@ -19,7 +19,7 @@ public class PermisosAdapter extends RecyclerView.Adapter<PermisosAdapter.ViewHo
     private List<Permiso> LP;
 
     public PermisosAdapter(List<Permiso> lp) {
-        LP = lp;
+        this.LP = lp;
     }
 
     @NonNull
@@ -32,13 +32,13 @@ public class PermisosAdapter extends RecyclerView.Adapter<PermisosAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull PermisosAdapter.ViewHolder holder, int position) {
-        Permiso permiso = Permiso.get(position);
+        Permiso permiso = LP.get(position);
         holder.setData(permiso);
     }
 
     @Override
     public int getItemCount() {
-       return Permiso.size();
+       return LP.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
